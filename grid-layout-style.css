@@ -1,0 +1,303 @@
+/* BODY CONTAINER */
+#grid-container{
+	display:grid;
+	grid-template-columns:15% 30% auto 15%;
+	grid-gap:5px;
+	margin:0;
+	font-family:Levenim Mt;
+}
+
+div p{
+	text-align:center;
+}
+
+#div-inside-header1 ,#div-inside-header2 {
+	text-align:left;
+	margin:0;
+	padding:0;
+	width:40%;
+	height:100%;
+}
+/* HEADER */
+header{
+	grid-column:1/5;
+}
+#display-1{
+	position:relative;
+	background:black;
+	color:white;
+	grid-column:1/5;
+	height:240px;
+	width:100%;
+	display:grid;
+	grid-template-columns: 30% auto;
+	grid-template-rows:41% 41% 18%;
+	text-align:center;
+}
+nav{
+	margin:0;
+	padding:0;
+}
+nav ul  {
+	margin:0;
+	padding:0;
+	list-style:none;
+	display:grid;
+	position:relative;
+	grid-template-columns:25% 25% 25% 25%;
+	padding:1%;
+}
+nav a{
+	color:white;
+	text-decoration:none;
+	font-weight:900;
+}
+
+#list-item-1 {
+	grid-column:1/2;
+}
+#list-item-2 {
+	grid-column:2/3;
+}
+#list-item-3 {
+	grid-column:3/4;
+}
+#list-item-4 {
+	grid-column:4/5;
+}
+/* INSIDE HEADER */
+#div-inside-header1{
+	position:relative;
+	color:black;
+	width:99%;
+	height:auto;
+	margin: 5px 5px;
+	grid-column:2/5;
+	background:#85929E;
+}
+
+#div-inside-header2{
+	position:relative;
+	color:black;
+	width:99%;
+	height:auto;
+	margin: 5px 5px;
+	grid-column:2/5;
+	background:#5D6D7E;
+}
+
+
+#inside-header3-navbar{
+	background:#99A3A4;
+	grid-column:2/5;
+	margin:5px 5px;
+	width:99%;
+}
+#inside-header3-navbar a{
+	color:black;
+}
+/* SIDEBAR */
+aside{
+	grid-column:1/2;
+}
+#display-2{
+	position:relative;
+	background:#D35400;
+	grid-column:1/2;
+	height:480px;
+	display:grid;
+	grid-template-columns:100%;
+}
+
+#inside-side1,#inside-side2,#inside-side3 {
+	width:100%;
+	height:100px;
+	background:#6E2C00;
+	margin:5px 0;
+	grid-column:1/2;
+}
+/* MAIN */
+#display-3{
+	color:white;
+	display:grid;
+	grid-template-rows: 15% auto;
+	grid-template-columns:60% 20% auto;
+	position:relative;
+	background:#17202A;
+	grid-column:2/5;
+	height:480px;
+	width:100%;
+}
+main{
+	grid-column:2/5;
+}
+
+#display-3 H1{
+	position:relative;
+	grid-column:1/2;
+	padding:1%;
+}
+#display-3 p {
+	padding:1%;
+	position:relative;
+	text-align:left;
+	grid-row:2/4;
+	grid-column:1/3;
+}
+/* INSIDE MAIN 1 AND 2 */
+#inside-main1{
+	height:100%;
+	width:100%;
+	color:white;
+	background:#566573;
+	grid-column:4/5;
+	grid-row:1/2;
+}
+#inside-main2{
+	height:100%;
+	width:100%;
+	color:white;
+	background:#2C3E50;
+	grid-column:4/5;
+	grid-row:2/3;
+}
+#inside-main3{
+	height:100%;
+	width:100%;
+	color:white;
+	background:#273746;
+	grid-column:4/5;
+	grid-row:3/4;
+}
+
+/* FOOTER */
+footer{
+	grid-column:1/5;
+}
+#display-4{
+	display:grid;
+	position:relative;
+	background:black;
+	color:white;
+	font-size:120%;
+	grid-column:1/5;
+	grid-gap:2px;
+	grid-template-columns:25% 25% 25% 25%;
+	height:200px;
+	
+}
+
+#footer-section1{
+	grid-column:1/2;
+	background:#424949;
+	text-align:center;
+}
+#footer-section2{
+	grid-column:2/3;
+	background:#424949;
+	text-align:center;
+}
+#footer-section3{
+	grid-column:3/4;
+	background:#424949;
+	text-align:center;
+}
+#footer-section4{
+	grid-column:4/5;
+	background:#424949;
+	width:98%;
+	text-align:center;
+}
+
+
+/* MEDIA QUERY FOR TABLET VIEW 768PX */
+@media only screen and (max-width:768px){
+	#grid-container{
+		display:grid;
+		grid-template-columns:90%;
+		
+	}
+	
+	header{
+		grid-column:1/5;
+	}
+	
+	#div-inside-header1,#div-inside-header2{
+		width:98%;
+	}
+	
+	#inside-header3-navbar{
+		background:#99A3A4;
+		grid-column:2/5;
+		margin:5px 5px;
+		width:98%;
+	}
+	
+	#display-1{
+		position:relative;
+		grid-column:1/5;
+	}
+	
+	/* SIDEBAR */
+	#inside-side1 {
+		width:100%;
+		height:200px;
+		background:#6E2C00;
+		margin:5px 0;
+		grid-columns:1/2;
+		grid-rows:1/5;
+	}
+	
+	#inside-side2,#inside-side3{
+		display:none;
+	}
+	
+	aside{
+		grid-column:1/5;
+		grid-row:3/4;
+	}
+	
+	#display-2{
+		position:relative;
+		grid-column:1/5;
+		height:auto;
+		display:grid;
+		grid-template-columns:100%;
+	}
+	
+	/* MAIN */
+	main{
+		grid-column:1/5;
+	}
+	
+	#display-3 p{
+		margin:0;
+		padding:5px;
+	}
+	
+	#display-3{
+		grid-row:1/3;	
+	}
+	
+	#inside-main1{
+		grid-row:1/2;
+	}
+	
+	#inside-main2{
+		grid-row:2/3;	
+	}
+	
+	#inside-main3{
+		grid-row:3/4;
+	}
+	
+	#display-4{
+		position:relative;
+		grid-column:1/5;
+	}
+	
+	/* FOOTER */
+	#footer-section4{
+		width:97%;
+	}
+}
